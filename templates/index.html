@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NEED BOT</title>
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+
+
+<body>
+
+
+<div class="pink-glow"></div>
+<div class="blue-glow"></div>
+
+
+
+<div class="app-container">
+
+
+
+<header class="top-header">
+
+
+<button id="menu-btn" class="menu-btn">
+☰
+</button>
+
+
+
+<h1>
+NeedBot
+</h1>
+
+
+
+<button id="theme-btn" class="theme-btn">
+🌙
+</button>
+
+
+</header>
+
+
+
+
+
+
+
+<!-- SIDEBAR -->
+
+
+<aside class="sidebar" id="sidebar">
+
+
+<div class="sidebar-header">
+
+
+<h2>
+Need Bot
+</h2>
+
+
+<button id="close-sidebar">
+✕
+</button>
+
+
+</div>
+
+
+
+<label>
+Select Persona
+</label>
+
+
+
+<select id="persona-select">
+
+
+<option value="Assistant">
+🤖 General Assistant
+</option>
+
+
+<option value="Teacher">
+👨‍🏫 Teacher
+</option>
+
+
+<option value="Coder">
+💻 Coder
+</option>
+
+
+<option value="Interviewer">
+🎤 Interviewer
+</option>
+
+
+<option value="Career Mentor">
+🧑‍💼 Career Mentor
+</option>
+
+
+<option value="Debugger">
+🐛 Debugger
+</option>
+
+
+</select>
+
+
+
+
+<button id="new-chat-btn" class="new-chat">
+
+＋ New Chat
+
+</button>
+
+
+
+
+
+<div class="search-box">
+
+
+<input
+
+type="text"
+
+id="search-history"
+
+placeholder="🔍 Search conversations..."
+
+>
+
+
+</div>
+
+
+
+
+
+<h3>
+Conversations
+</h3>
+
+
+
+<div id="conversation-list">
+
+
+<p>
+No conversations yet
+</p>
+
+
+</div>
+
+
+
+
+<button id="delete-all-btn" class="delete-btn">
+
+🗑 Delete All
+
+</button>
+
+
+
+</aside>
+
+
+
+
+
+
+
+<!-- CHAT AREA -->
+
+
+<main class="chat-area">
+
+
+
+
+
+<section class="welcome" id="welcome">
+
+
+<h2>
+Welcome Friends ✨
+</h2>
+
+
+<p>
+Ask anything and start a conversation.
+</p>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CHAT MESSAGES -->
+
+
+<div id="chat-box" class="chat-box">
+
+
+<div class="bot-message message">
+
+
+<div class="avatar">
+
+🤖
+
+</div>
+
+
+
+<div class="message-content">
+
+Hello! How can I help you today?
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- INPUT -->
+
+
+<div class="input-area">
+
+
+
+<input
+
+type="text"
+
+id="user-input"
+
+placeholder="Type your message..."
+
+autocomplete="off"
+
+>
+
+
+
+
+<button id="send-btn">
+
+➤
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+
+
+</body>
+
+</html>
